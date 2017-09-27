@@ -1,3 +1,5 @@
-# Module Name
+# Simple Debug Logger
 
-[![Build Status](https://travis-ci.org/essenmitsosse/***MODULE-NAME***.svg)](https://travis-ci.org/essenmitsosse/***MODULE-NAME***) [![Coverage Status](https://coveralls.io/repos/github/essenmitsosse/***MODULE-NAME***/badge.svg)](https://coveralls.io/github/essenmitsosse/***MODULE-NAME***) [![Dependency Status](https://david-dm.org/essenmitsosse/***MODULE-NAME***.svg)](https://david-dm.org/essenmitsosse/***MODULE-NAME***)
+[![Build Status](https://travis-ci.org/essenmitsosse/simple-debug-logger.svg)](https://travis-ci.org/essenmitsosse/simple-debug-logger) [![Coverage Status](https://coveralls.io/repos/github/essenmitsosse/simple-debug-logger/badge.svg)](https://coveralls.io/github/essenmitsosse/simple-debug-logger) [![Dependency Status](https://david-dm.org/essenmitsosse/simple-debug-logger.svg)](https://david-dm.org/essenmitsosse/simple-debug-logger)
+
+A simple helper function, that allows to create more usefull (multiline) debug logs.
