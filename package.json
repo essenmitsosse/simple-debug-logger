@@ -1,20 +1,20 @@
 {
-	"name": "***MODULENAME***",
+	"name": "simple-debug-messages",
 	"version": "0.0.0",
-	"description": "***DESCRIPTION***",
-	"main": "***MODULENAME***.js",
+	"description": "A simple helper function, that allows to create more usefull (multiline) debug logs.",
+	"main": "simple-debug-messages.js",
 	"files": [
-		"***MODULENAME***.js",
+		"simple-debug-messages.js",
 		"/lib"
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/essenmitsosse/***MODULENAME***"
+		"url": "git+https://github.com/essenmitsosse/simple-debug-messages"
 	},
 	"bugs": {
-		"url": "https://github.com/essenmitsosse/***MODULENAME***/issues"
+		"url": "https://github.com/essenmitsosse/simple-debug-messages/issues"
 	},
-	"homepage": "https://github.com/essenmitsosse/***MODULENAME***#readme",
+	"homepage": "https://github.com/essenmitsosse/simple-debug-messages#readme",
 	"scripts": {
 		"test": "mocha -R spec tests/*",
 		"test:watch": "mocha -R min tests/* -watch",
@@ -32,6 +32,8 @@
 		"chai": "^4.1.2",
 		"coveralls": "^2.13.1",
 		"istanbul": "^0.4.5",
-		"mocha": "^3.5.3"
+		"mocha": "^3.5.3",
+		"sinon": "^3.3.0",
+		"sinon-chai": "^2.13.0"
 	}
 }
