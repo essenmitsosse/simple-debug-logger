@@ -1,20 +1,20 @@
 {
-	"name": "simple-debug-messages",
+	"name": "simple-debug-logger",
 	"version": "0.1.0",
 	"description": "A simple helper function, that allows to create more usefull (multiline) debug logs.",
-	"main": "simple-debug-messages.js",
+	"main": "simple-debug-logger.js",
 	"files": [
-		"simple-debug-messages.js",
+		"simple-debug-logger.js",
 		"/lib"
 	],
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/essenmitsosse/simple-debug-messages"
+		"url": "git+https://github.com/essenmitsosse/simple-debug-logger"
 	},
 	"bugs": {
-		"url": "https://github.com/essenmitsosse/simple-debug-messages/issues"
+		"url": "https://github.com/essenmitsosse/simple-debug-logger/issues"
 	},
-	"homepage": "https://github.com/essenmitsosse/simple-debug-messages#readme",
+	"homepage": "https://github.com/essenmitsosse/simple-debug-logger#readme",
 	"scripts": {
 		"test": "mocha -R spec tests/* --recursive",
 		"test:watch": "mocha -R min tests/* --recursive -watch",
