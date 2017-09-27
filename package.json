@@ -16,9 +16,9 @@
 	},
 	"homepage": "https://github.com/essenmitsosse/simple-debug-messages#readme",
 	"scripts": {
-		"test": "mocha -R spec tests/*",
-		"test:watch": "mocha -R min tests/* -watch",
-		"test:cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec tests/*"
+		"test": "mocha -R spec tests/* --recursive",
+		"test:watch": "mocha -R min tests/* --recursive -watch",
+		"test:cover": "node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec tests/* --recursive"
 	},
 	"keywords": [
 		"javascript",
