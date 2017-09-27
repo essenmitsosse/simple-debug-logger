@@ -1,6 +1,6 @@
 {
 	"name": "simple-debug-messages",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "A simple helper function, that allows to create more usefull (multiline) debug logs.",
 	"main": "simple-debug-messages.js",
 	"files": [
