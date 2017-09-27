@@ -7,7 +7,6 @@ const sinonChai = require( "sinon-chai" );
 const sinon = require( "sinon" );
 const debugLogger = require( "../simple-debug-logger" );
 
-chai.should();
 chai.use( sinonChai );
 
 describe( "Implementation test", function () {
@@ -19,7 +18,9 @@ describe( "Implementation test", function () {
 
 		afterEach( function () {
 			this.consoleLogSpy.restore();
+			// This creates a bug, where those tests are not individually shown on the mocha output
 		} );
+
 		describe( "message as string", function () {
 			it( "simple string", function () {
 				debugLogger.log( "testMessage" );
@@ -43,50 +44,13 @@ describe( "Implementation test", function () {
 			} );
 		} );
 
-		it( "message as array", function () {
-			debugLogger.log( [ "first Line.", "New Line." ] );
-
-			expect( this.consoleLogSpy )
-				.to.have.been.calledWith( "first Line.\nNew Line." );
-		} );
-	} );
-
-	describe( "log", function () {
-		beforeEach( function () {
-			this.consoleLogSpy = sinon.stub( console, "log" );
-		} );
-
-		afterEach( function () {
-			this.consoleLogSpy.restore();
-		} );
-		describe( "message as string", function () {
-			it( "simple string", function () {
-				debugLogger.log( "testMessage" );
+		describe( "message as array", function () {
+			it( "join array to string with new line", function () {
+				debugLogger.log( [ "first Line.", "New Line." ] );
 
 				expect( this.consoleLogSpy )
-					.to.have.been.calledWith( "testMessage" );
+					.to.have.been.calledWith( "first Line.\nNew Line." );
 			} );
-
-			it( "string with space", function () {
-				debugLogger.log( "test Message" );
-
-				expect( this.consoleLogSpy )
-					.to.have.been.calledWith( "test Message" );
-			} );
-
-			it( "string with new line", function () {
-				debugLogger.log( "Test Message.\nNew Line." );
-
-				expect( this.consoleLogSpy )
-					.to.have.been.calledWith( "Test Message.\nNew Line." );
-			} );
-		} );
-
-		it( "message as array", function () {
-			debugLogger.log( [ "first Line.", "New Line." ] );
-
-			expect( this.consoleLogSpy )
-				.to.have.been.calledWith( "first Line.\nNew Line." );
 		} );
 	} );
 
