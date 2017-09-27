@@ -35,5 +35,8 @@
 		"mocha": "^3.5.3",
 		"sinon": "^3.3.0",
 		"sinon-chai": "^2.13.0"
+	},
+	"dependencies": {
+		"array-to-string-with-indentation": "^0.1.1"
 	}
 }
